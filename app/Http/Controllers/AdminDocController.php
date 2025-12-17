@@ -11,9 +11,6 @@ use Illuminate\View\View;
 
 class AdminDocController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $dokumen = dokumen::all();

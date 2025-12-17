@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lentera Madu</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
@@ -291,23 +292,26 @@
 
     .media {
         margin-bottom: 1rem;
-        
+
     }
 
-    .dashkris{
+    .dashkris {
         size-adjust: inherit;
     }
-    .mediadash{
+
+    .mediadash {
         font-size: small;
     }
-    .juduldash{
+
+    .juduldash {
         font-weight: 700;
         font-size: medium;
         margin-bottom: 0%;
         padding-bottom: 0%;
 
     }
-    .aduandash{
+
+    .aduandash {
         margin-top: 5px;
         font-weight: 300;
 
@@ -358,26 +362,24 @@
             </div>
 
             @if (Route::has('login'))
-            <nav class="-mx-3 flex flex-1 justify-end">
-                @auth
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
+                <nav class="-mx-3 flex flex-1 justify-end">
+                    @auth
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
 
-                    <x-responsive-nav-link :href="route('logout')"
-                        onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
-                </form>
-                @else
-                <a
-                    href="{{ route('login') }}"
-                    class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                    Login sebagai admin <i class="bi bi-box-arrow-in-right"></i>
-                </a>
+                            <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-responsive-nav-link>
+                        </form>
+                    @else
+                        <a href="{{ route('login') }}"
+                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                            Login sebagai admin <i class="bi bi-box-arrow-in-right"></i>
+                        </a>
 
-                @endauth
-            </nav>
+                    @endauth
+                </nav>
             @endif
         </header>
         <div class="l-navbar" id="nav-bar">
@@ -387,14 +389,16 @@
                         <span class="nav_logo-icon">
                             <img src="{{URL::asset('/image/logo_let.png')}}" alt="Logo" width="100x" height="90px">
                         </span>
-
-
                     </a>
                     <div class="nav_list">
-                        <a id="das" href="{{url('/dashhboard')}}" class="nav_link"><i class="bi bi-pie-chart-fill"></i></i>Dashboard</a>
-                        <a id="stu" href="{{url('/krisan')}}" class="nav_link"> <i class="bi bi-chat-left-text-fill"></i> <span class="nav_name">Diskusi</span> </a>
-                        <a id='tea' href="{{url('/dokumen')}}" class="nav_link"> <i class="bi bi-file-earmark-fill"></i> <span class="nav_name">Dokumen</span></a>
-                        <a id='crs' href="{{url('/pengurus')}}" class="nav_link"> <i class="bi bi-people-fill"></i> <span class="nav_name">Organisasi</span> </a>
+                        <a id="das" href="{{url('/dashhboard')}}" class="nav_link"><i
+                                class="bi bi-pie-chart-fill"></i></i>Dashboard</a>
+                        <a id="stu" href="{{url('/krisan')}}" class="nav_link"> <i
+                                class="bi bi-chat-left-text-fill"></i> <span class="nav_name">Diskusi</span> </a>
+                        <a id='tea' href="{{url('/dokumen')}}" class="nav_link"> <i class="bi bi-file-earmark-fill"></i>
+                            <span class="nav_name">Dokumen</span></a>
+                        <a id='crs' href="{{url('/pengurus')}}" class="nav_link"> <i class="bi bi-people-fill"></i>
+                            <span class="nav_name">Organisasi</span> </a>
                     </div>
             </nav>
         </div>
@@ -408,7 +412,7 @@
     </main>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
+        document.addEventListener("DOMContentLoaded", function (event) {
 
             const showNavbar = (toggleId, navId, bodyId, headerId) => {
                 const toggle = document.getElementById(toggleId),

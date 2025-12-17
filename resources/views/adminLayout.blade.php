@@ -381,8 +381,8 @@
                     <div class="nav_list">
                         <a id="das" href="{{url('/adminDashhboard')}}" class="nav_link"><i class="bi bi-pie-chart-fill"></i></i>Dashboard</a>
                         <a id="stu" href="{{url('/adminKrisan')}}" class="nav_link"> <i class="bi bi-chat-left-text-fill"></i> <span class="nav_name">Diskusi</span> </a>
-                        <a id='tea' href="{{url('/adminDokumen')}}" class="nav_link"> <i class="bi bi-file-earmark-fill"></i> <span class="nav_name">Dokumen</span></a>
-                        <a id='crs' href="{{url('/adminPengurus')}}" class="nav_link"> <i class="bi bi-people-fill"></i> <span class="nav_name">Organisasi</span> </a>
+                        <a id='tea' href="{{url('/adminDokumen')}}" class="nav_link"> <i class="bi bi-file-earmark-fill"></i> <span class="nav_name">Jadwal<br>Bansos</span></a>
+                        <a id='crs' href="{{url('/adminPengurus')}}" class="nav_link"> <i class="bi bi-people-fill"></i> <span class="nav_name">Penerima<br>Bansos</span> </a>
                     </div>
             </nav>
         </div>

@@ -11,7 +11,7 @@
         <input type="text" name="nama" id="nama" class="form-control"></br>
         <label>Upload file</label></br>
         <input type="file" name="file" id="file" class="form-control"></br>
-        
+
         <input type="submit" value="Simpan" class="btn btn-success"></br>
     </form>
    
