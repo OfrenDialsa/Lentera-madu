@@ -7,7 +7,7 @@ use App\Http\Controllers\AdminPenController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\dokumenController;
+use App\Http\Controllers\DokumenController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KrisanController;
 use App\Http\Controllers\PengurusController;
@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::resource('/pengurus', PengurusController::class);
 
-Route::resource('/dokumen', dokumenController::class);
+Route::resource('/dokumen', DokumenController::class);
 
 Route::resource('/krisan', KrisanController::class);
 
